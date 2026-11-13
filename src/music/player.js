@@ -1,4 +1,5 @@
-process.env.FFMPEG_PATH = 'C:\\Code\\Personal\\Discord\\BOTS\\Private\\Music-Bot\\discord tools\\ffmpeg.exe';
+const path = require('path');
+process.env.FFMPEG_PATH = path.join(__dirname, '../../discord tools/ffmpeg.exe');
 
 const {
   joinVoiceChannel,
@@ -15,7 +16,7 @@ const { spawn } = require('child_process');
 const { getQueue, deleteQueue } = require('./queue');
 const { EmbedBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle } = require('discord.js');
 
-const YTDLP_PATH = 'C:\\Code\\Personal\\Discord\\BOTS\\Private\\Music-Bot\\discord tools\\yt-dlp.exe';
+const YTDLP_PATH = path.join(__dirname, '../../discord tools/yt-dlp.exe');
 
 function getGuildQueue(guildId) {
   return getQueue(guildId);
