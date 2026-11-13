@@ -1,0 +1,7 @@
+Download the Ffmpeg
+
+Link: https://www.gyan.dev/ffmpeg/builds/
+
+Recommended file: ffmpeg-release-full.7z or ffmpeg-release-essentials.zip
+
+Extract it and use the path to ffmpeg.exe inside the bin/ folder.
